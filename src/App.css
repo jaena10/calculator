@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  background-color: #fdf2f8;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 60px; 
+}
+
+.Header {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.Calculator {
+  width: 360px;
+  margin: 0 auto;
+  background-color: #83214a; 
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.Display {
+  background-color: #f5b8e1; 
+  border-radius: 10px;
+  height: 70px;
+  font-size: 2.2rem;
+  padding: 10px 15px;
+  text-align: right;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+
+.Keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.Button {
+  background-color: #e67baf; 
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 0;
+  cursor: pointer;
+  transition: opacity 0.1s ease;
+}
+
+.Button:active {
+  opacity: 0.8;
+}
+
+.ClearButton {
+  background-color: #f32775; 
+}
+
+.EqualsButton {
+  background-color: #f72487;
+}
+
+.NameBadge {
+  background-color: #b0527f;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 12px 0;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
